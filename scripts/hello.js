@@ -2,10 +2,13 @@
 
 module.exports = (robot) => {
 
+  //煽り少女と呼べば煽る
   robot.respond(/.*/i, Indignation);
 
+  //これらの言葉を発言すれば煽る
   robot.hear(/煽り|煽ってくださーい|please|/i, Indignation);
 
+  //煽り言葉
   function Indignation(msg) {
     const lots = [
       '生きている価値あるー？',
