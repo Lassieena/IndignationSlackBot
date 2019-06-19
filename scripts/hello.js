@@ -1,10 +1,15 @@
 'use strict';
 
 module.exports = (robot) => {
-  robot.hear(/(.*)/i, (msg) => {
+
+  robot.respond(/.*/i, Indignation);
+
+  robot.hear(/煽り|煽ってくださーい|please|/i, Indignation);
+
+  function Indignation(msg) {
     const lots = [
-      '生きている価値ある？',
-      'お前ミチコオンラインやってねーの？？？',
+      '生きている価値あるー？',
+      'お前ミチコオンラインやってないのー？？？',
       'この烏龍茶が!!',
       'このお話つまんなーい',
       'どこが悪いのぉ？あたまぁ？',
@@ -21,7 +26,7 @@ module.exports = (robot) => {
     ];
     const lot = lots[Math.floor(Math.random() * lots.length)];
     msg.reply(lot);
-  });
+  }
 
 
 };
