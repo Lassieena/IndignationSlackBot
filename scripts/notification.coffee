@@ -53,4 +53,5 @@ module.exports = (robot) ->
     robot.send envelope, word6[random(word6.length)] + '@here'
   )
 
+
   cronjob.start()

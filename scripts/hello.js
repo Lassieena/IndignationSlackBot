@@ -25,11 +25,8 @@ module.exports = (robot) => {
       '全部おめーが悪いんです',
       'どうしてそんなにおバカさんなのぉ？',
       'おまわりさん！この人です！',
-
     ];
     const lot = lots[Math.floor(Math.random() * lots.length)];
     msg.reply(lot);
   }
-
-
 };
