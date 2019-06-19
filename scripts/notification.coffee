@@ -20,7 +20,7 @@ module.exports = (robot) ->
       "ff"
     ]
     envelope = room: "slackstudy"
-    robot.send envelope, word2[random(word2.length)]
+    robot.send envelope, word2[random(word2.length)] + '@all'
   )
 
   cronjob = new cronJob('35 12 * * * 1-5', () =>
