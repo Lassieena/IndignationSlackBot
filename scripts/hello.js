@@ -6,7 +6,7 @@ module.exports = (robot) => {
   robot.respond(/.*/i, Indignation);
 
   //これらの言葉を発言すれば煽る
-  robot.hear(/煽り|煽ってくださーい|please|/i, Indignation);
+  robot.hear(/煽り|煽ってくださーい|please/i, Indignation);
 
   //煽り言葉
   function Indignation(msg) {
@@ -27,6 +27,6 @@ module.exports = (robot) => {
       'おまわりさん！この人です！',
     ];
     const lot = lots[Math.floor(Math.random() * lots.length)];
-    msg.reply(lot);
+    msg.send(lot);
   }
 };

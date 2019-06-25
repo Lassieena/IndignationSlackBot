@@ -8,7 +8,7 @@ hogo = (msg) ->
       "なんか面白い話してー!!"
     ]
     envelope = room: "煽りチャンネル"
-    msg.send envelope, '@here' + word[random(word.length)]
+    msg.send envelope, word[random(word.length)]
     return
 
 module.exports = (robot) ->
