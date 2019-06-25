@@ -5,9 +5,9 @@ random = (n) -> Math.floor(Math.random() * n)
 # 煽り言葉
 hogo = (msg) ->
     word = [
-      "なんか面白い話してよ!!"
+      "なんか面白い話してー!!"
     ]
-    envelope = room: "slackstudy"
+    envelope = room: "煽りチャンネル"
     msg.send envelope, '@here' + word[random(word.length)]
     return
 
