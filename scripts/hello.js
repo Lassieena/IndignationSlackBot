@@ -3,7 +3,7 @@
 module.exports = (robot) => {
 
   //煽り少女と呼べば煽る
-  robot.respond(/.*/i, Indignation);
+  // robot.respond(/.*/i, Indignation);
 
   //これらの言葉を発言すれば煽る
   robot.hear(/煽り|煽れ|煽ってください|煽ってくださーい|please/i, Indignation);
