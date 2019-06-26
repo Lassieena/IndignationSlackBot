@@ -18,7 +18,7 @@ module.exports = (robot) ->
   cronjob = new cronJob('0 35 10 * * 1-5', hogo(robot))
   cronjob = new cronJob('0 35 11 * * 1-5', hogo(robot))
   cronjob = new cronJob('0 35 12 * * 1-5', hogo(robot))
-  cronjob = new cronJob('0 28 13 * * 1-5', hogo(robot))
+  cronjob = new cronJob('0 05 14 * * 1-5', hogo(robot))
   cronjob = new cronJob('0 05 15 * * 1-5', hogo(robot))
   cronjob = new cronJob('0 05 16 * * 1-5', hogo(robot))
 
