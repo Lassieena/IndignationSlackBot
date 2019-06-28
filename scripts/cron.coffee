@@ -6,7 +6,8 @@ random = (n) -> Math.floor(Math.random() * n)
 hogo = (msg) ->
     word = [
       "なんか面白い話してーよー!!",
-      "ミチコオンラインの時間だよー"
+      "ミチコオンラインの時間だよー",
+      "竜王のお仕事の時間だよ"
     ]
     envelope = room: "煽りチャンネル"
     msg.send envelope, word[random(word.length)]
