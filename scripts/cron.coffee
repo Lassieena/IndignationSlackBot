@@ -7,7 +7,9 @@ hogo = (msg) ->
     word = [
       "なんか面白い話してーよー!!",
       "ミチコオンラインの時間だよー",
-      "竜王のお仕事の時間だよ"
+      "お仕事の時間だよー",
+      "あなたよくここまで生きれたね",
+      "何でここにいるのよー"
     ]
     envelope = room: "煽りチャンネル"
     msg.send envelope, word[random(word.length)]
