@@ -3,7 +3,7 @@
 module.exports = (robot) => {
 
   //これらの言葉を発言すれば煽る
-  robot.hear(/あおり|あおって|煽って|煽り|煽れ|Indignation|罵倒|ばか|バカ|馬鹿|草|お願い|よろしく|こんにちは|どうも|何|なに/i, Indignation);
+  robot.hear(/あおり|あおって|煽|あおられた|Indignation|罵倒|ばか|バカ|馬鹿|草|お願い|よろしく|こんにちは|どうも|何|なに/i, Indignation);
   robot.hear(/くじ|please/i, fortune);
 
   //煽り言葉
@@ -48,9 +48,9 @@ module.exports = (robot) => {
       horo = horos[1];
     } else if (num < 0.18) {
       horo = horos[2];
-    } else if (num < 0.33) {
+    } else if (num < 0.31) {
       horo = horos[3];
-    } else if (num < 0.49) {
+    } else if (num < 0.47) {
       horo = horos[4];
     } else if (num < 0.68) {
       horo = horos[5];
