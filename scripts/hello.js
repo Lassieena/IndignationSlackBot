@@ -3,7 +3,7 @@
 module.exports = (robot) => {
 
   //これらの言葉を発言すれば煽る
-  robot.hear(/あおり|少女|あおって|煽|あおられた|Indignation|罵倒|ばか|バカ|馬鹿|草|お願い|よろしく|こんにちは|どうも|何|なに/i, Indignation);
+  robot.hear(/あおり|少女|あおって|煽|あおられた|indignation|罵倒|ばか|バカ|馬鹿|草|お願い|よろしく|こんにちは|どうも|何|なに/i, Indignation);
   robot.hear(/くじ|運勢|please/i, fortune);
 
   //煽り言葉
@@ -34,7 +34,8 @@ module.exports = (robot) => {
       'あなた学校行ってるの？',
       'あなたキモオタの鏡のような人ね',
       '君はそーつぉーどーりな人ね',
-      '私とあなたの関係？君のそーつぉーどーりだよ'
+      '私とあなたの関係？君のそーつぉーどーりだよ',
+      'そんなことよりお金ちょうだいよぉ'
     ];
     const lot = lots[Math.floor(Math.random() * lots.length)];
     msg.send(lot);
